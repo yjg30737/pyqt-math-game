@@ -9,9 +9,11 @@ This app generates a lot of different math problems with its AI(by pymeg, check 
 
 Math problem is pretty basic(plus and minus only).
 
-User can solve this problem with writing the answer in line edit and press return(enter) key or click submit button.
+User can solve this problem with writing the answer in LINEEDIT and press return(enter) key or click SUBMIT button.
 
 If submitted answer is right, right message will pop up, if it is wrong, wrong message will pop up.
+
+If problem is so hard to solve than user can change the problem with clicking TRY OTHER.
 
 Took about 40 minutes to make this.
 
