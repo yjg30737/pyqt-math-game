@@ -1,0 +1,6 @@
+git+https://git@github.com/yjg30737/pyqt-style-setter.git@main
+git+https://git@github.com/yjg30737/pyqt-custom-titlebar-setter.git@main
+git+https://git@github.com/yjg30737/pyqt-toast.git@main
+git+https://git@github.com/yjg30737/pymeg.git@main
+git+https://git@github.com/yjg30737/pyqt-responsive-label.git@main
+git+https://git@github.com/yjg30737/pyqt-rounded-corners-lineedit.git@main
