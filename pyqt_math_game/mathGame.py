@@ -1,6 +1,4 @@
-import random
-
-from PyQt5.QtWidgets import QApplication, QGridLayout, QWidget, QPushButton
+from PyQt5.QtWidgets import QApplication, QGridLayout, QWidget, QPushButton, QMainWindow
 
 from pymeg import ExpStruct, ExpGenerator
 from pyqt_responsive_label import ResponsiveLabel
@@ -9,7 +7,7 @@ from pyqt_style_setter import StyleSetter
 from pyqt_toast import Toast
 
 
-class MathGame(QWidget):
+class MathGame(QMainWindow):
     def __init__(self):
         super().__init__()
         self.__initUi()
@@ -34,8 +32,13 @@ class MathGame(QWidget):
         lay.addWidget(self.__submitLineEdit, 1, 0, 1, 1)
         lay.addWidget(self.__submitBtn, 1, 1, 1, 1)
         lay.addWidget(btn, 0, 1, 1, 1)
-        self.setLayout(lay)
+
+        mainWidget = QWidget()
+        mainWidget.setLayout(lay)
+
         self.setMinimumSize(self.sizeHint())
+
+        self.setCentralWidget(mainWidget)
 
     def __initProblem(self):
         self.__problem = ExpStruct()
